@@ -29,7 +29,7 @@ from absl import flags
 
 # This signifies the max integer that the controller RNN could predict for the
 # augmentation scheme.
-_MAX_LEVEL = 1000.
+_MAX_LEVEL = 10.
 
 FLAGS = flags.FLAGS
 
