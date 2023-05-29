@@ -19,7 +19,7 @@ rm -r ${model_dir}
 
 # Training
 python main.py \
-    --model_name=efficientnet-b0 \
+    --model_name=efficientnet-l2 \
     --use_tpu=False \
     --use_bfloat16=False \
     --task_name=svhn \
@@ -39,7 +39,7 @@ python main.py \
 
 # Eval
 python main.py \
-    --model_name=efficientnet-b0 \
+    --model_name=efficientnet-l2 \
     --use_tpu=False \
     --use_bfloat16=False \
     --task_name=svhn \

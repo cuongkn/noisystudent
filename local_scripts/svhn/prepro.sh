@@ -21,5 +21,5 @@ python proc_svhn.py \
   --output_dir=data/svhn/proc
 
 mkdir ckpt
-wget https://storage.googleapis.com/noisystudent/ckpts/svhn/teacher_ckpt.tar.gz -O ckpt/teacher_ckpt.tar.gz
+wget https://storage.googleapis.com/cloud-tpu-checkpoints/efficientnet/noisystudent/noisy_student_efficientnet-l2.tar.gz -O ckpt/teacher_ckpt.tar.gz
 cd ckpt && tar xzvf teacher_ckpt.tar.gz

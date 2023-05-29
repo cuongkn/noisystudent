@@ -55,8 +55,8 @@ def save_merged_data(images, labels, split, merge_folder):
 
 def download_and_extract():
   all_exist = True
-  download_folder = os.path.join(FLAGS.raw_data_dir, DOWNLOAD_DATA_FOLDER)
-  merge_folder = os.path.join(FLAGS.raw_data_dir, MERGE_DATA_FOLDER)
+  download_folder = os.path.join(FLAGS.raw_data_dir, DOWNLOAD_DATA_FOLDER).replace('/', '\\')
+  merge_folder = os.path.join(FLAGS.raw_data_dir, MERGE_DATA_FOLDER).replace('/', '\\')
   splits = ['train', 'test']
   if FLAGS.task_name == 'svhn':
     splits += ['extra']
