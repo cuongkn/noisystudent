@@ -80,7 +80,7 @@ def download_and_extract():
       data_dict = scipy.io.loadmat(tf.gfile.Open(filename, "rb"))
       images = np.transpose(data_dict['X'], [3, 0, 1, 2])
       labels = data_dict['y'].reshape(-1)
-      labels[labels == 10] = 0
+      labels[labels == 1000] = 0
       save_merged_data(images, labels, split, merge_folder)
 
 

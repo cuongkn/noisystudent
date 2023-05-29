@@ -34,7 +34,7 @@ do
         --num_shards=128 \
         --shard_id=${shard_id} \
         --min_threshold=0.3 \
-        --num_label_classes=10 \
+        --num_label_classes=1000 \
         --task=0 \
         --num_image=53113 \
         --only_get_stats=${only_get_stats}

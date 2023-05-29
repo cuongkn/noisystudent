@@ -680,7 +680,7 @@ def main(unused_argv):
   if FLAGS.task_name == 'svhn':
     FLAGS.input_image_size = 32
     FLAGS.small_image_model = True
-    FLAGS.num_label_classes = 10
+    FLAGS.num_label_classes = 1000
   if FLAGS.num_train_images is None:
     FLAGS.num_train_images = task_info.get_num_train_images(FLAGS.task_name)
   if FLAGS.num_eval_images is None:
