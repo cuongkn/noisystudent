@@ -19,7 +19,7 @@ rm -r ${model_dir}
 
 # Training
 python main.py \
-    --model_name=efficientnet-l2 \
+    --model_name=efficientnet-b0 \
     --use_tpu=False \
     --use_bfloat16=False \
     --task_name=svhn \
@@ -34,14 +34,14 @@ python main.py \
     --final_base_lr=0.0002 \
     --weight_decay=1e-4 \
     --label_data_dir=./data/svhn/proc \
-    --teacher_model_name=efficientnet-l2 \
-    --teacher_model_path=ckpt/noisy_student_efficientnet-l2/model.ckpt \
+    --teacher_model_name=efficientnet-b0 \
+    --teacher_model_path=ckpt/noisy_student_efficientnet-b0/model.ckpt \
     --model_dir=./ckpt/exp_1 \
     --unlabel_data_dir=./data/svhn/proc/unlabeled
 
 # Eval
 python main.py \
-    --model_name=efficientnet-l2 \
+    --model_name=efficientnet-b0 \
     --use_tpu=False \
     --use_bfloat16=False \
     --task_name=svhn \
